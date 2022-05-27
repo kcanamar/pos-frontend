@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import { useEffect, useState } from "react"
+import Home from "../pages/Home"
 import Menu from "../pages/Menu"
 import Admin from "../pages/Admin"
 export default function Main() {
@@ -46,6 +47,13 @@ export default function Main() {
                 <Route
                     exact
                     path="/" 
+                    element={
+                        <Home/>
+                    }
+                />
+                <Route
+                    exact
+                    path="/menu" 
                     element={
                         <Menu
                             foods={foods}
