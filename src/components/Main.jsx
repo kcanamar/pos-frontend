@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import Home from "../pages/Home"
 import Menu from "../pages/Menu"
 import Admin from "../pages/Admin"
+import AdminEdit from "../pages/AdminEdit"
 export default function Main() {
 
     const [foods, setFoods] = useState(null)
@@ -66,6 +67,14 @@ export default function Main() {
                         <Admin
                             foods={foods}
                             createFood={createFood}
+                        />
+                    }
+                />
+                <Route 
+                    path="/admin/:id"
+                    element={
+                        <AdminEdit
+                            foods={foods}
                             updateFood={updateFood}
                             deleteFood={deleteFood}
                         />

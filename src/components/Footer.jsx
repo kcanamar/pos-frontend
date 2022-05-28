@@ -17,12 +17,11 @@ export default function Footer() {
     <Box sx={{ width: 375 }}>
       <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={8}>
         <BottomNavigation
-          showLabels
           value={value}
           onChange={(evt, newValue) => { handleChange(evt, newValue) }}
         >
           <Link to={"/"}>
-            <BottomNavigationAction to={"/"} label="Home" icon={<HomeIcon />} />
+            <BottomNavigationAction label="Home" icon={<HomeIcon />} />
           </Link>
           <Link to={"/menu"}>
             <BottomNavigationAction label="Menu" icon={<MenuIcon />} />
