@@ -61,7 +61,7 @@ export default function Main() {
                     }
                 />
                 <Route 
-                    path="/food/:id"
+                    path="/admin"
                     element={
                         <Admin
                             foods={foods}
