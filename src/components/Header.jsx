@@ -1,10 +1,19 @@
 import { Link } from "react-router-dom"
 
 export default function Header() {
+    const navStyle = {
+        fontSize: "24px",
+        textAlign: "left",
+    }
+
+    const linkStyle = {
+        textDecoration: "none",
+        color: "black", 
+    }
     return (
-        <nav className="nav">
-            <Link to="/menu">
-                <div>Dat POS</div>
+        <nav style={navStyle}>
+            <Link to="/menu" style={linkStyle}>
+                <div >Dat POS</div>
             </Link>
         </nav>
     )

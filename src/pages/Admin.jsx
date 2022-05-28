@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import { Grid, Paper } from "@mui/material"
 
 export default function Admin({ foods, createFood, updateFood, deleteFood }) {
 
@@ -31,13 +32,17 @@ export default function Admin({ foods, createFood, updateFood, deleteFood }) {
     }
 
     const loaded = () => {
-        return foods.map((item) => (
-            <div key={item._id} className="item">
-                <Link to={`/admin/${item._id}`}>
-                    <h3>{item.name}</h3>
-                </Link>
-            </div>
-        ))
+        return <Grid container spacing={2}>
+            {foods.map((item) => (
+                <Grid item xs={4} key={item._id} >
+                    <Link to={`/admin/${item._id}`}>
+                        <Paper>
+                            <h3>{item.PosName}</h3>
+                        </Paper>
+                    </Link>
+                </Grid>
+            ))}
+        </Grid>
     }
     
     const loading = () => <h1>Loading....</h1>
