@@ -7,7 +7,7 @@ import AdminEdit from "../pages/AdminEdit"
 export default function Main() {
 
     const [foods, setFoods] = useState(null)
-    const URL = "http://karc-pos-backend.herokuapp.com/food/"
+    const URL = "https://karc-pos-backend.herokuapp.com/food/"
     const getFoods = async () => {
         const data = await fetch(URL).then(res => res.json())
         setFoods(data)
