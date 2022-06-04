@@ -1,4 +1,4 @@
-## Live Mobile Site
+## [Live Mobile Site](https://pos-deliverable.netlify.app)
 
 This application is designed to be viewed on an Iphone SE.
 
@@ -6,9 +6,16 @@ This application is designed to be viewed on an Iphone SE.
 
 ##### *Future Updates*
 
-- Admin Authentication
+- Guest Feature
+- Employee Feature
+- Admin Feature
+- Oauth Security
+- Custom Employee Authrization
+- HRIS Intergration
 - Order Functionality
 - LTO/ News Feed
 
 ##### Component Architecture
-<img src="public/Component Strucutre.jpg">
+
+Version 1 - 
+<img src="public/Component Strucutre.jpg"> 
