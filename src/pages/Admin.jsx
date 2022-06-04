@@ -2,6 +2,14 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import { Grid, Paper } from "@mui/material"
 
+const adminPage = {
+    height: "90vh",
+    margin: "auto",
+    display: "flex",
+    flexFlow: "column",
+    justifyContent: "center",
+    boxSizing: "border-box",
+ }
 const createStyle = {
     marginBottom: 5
 }
@@ -74,7 +82,7 @@ export default function Admin({ foods, createFood, updateFood, deleteFood }) {
     const loading = () => <h1>Loading....</h1>
 
     return (
-        <div>
+        <div style={adminPage}>
             <h1>Admin DashBoard</h1>
             <h3 style={createStyle}>Create New Item</h3>
             <form style={formStyle} onSubmit={handleNewSubmit}>
